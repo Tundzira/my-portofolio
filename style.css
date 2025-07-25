@@ -1,0 +1,23 @@
+/* Custom CSS for transitions or specific overrides */
+.smooth-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styles for the modal */
+#projectModal.hidden {
+    display: none;
+}
+
+#projectModal.show {
+    opacity: 1;
+    display: flex; /* Ensure it's flex when shown for centering */
+}
+
+#projectModal > div.transform.scale-95 {
+    transform: scale(1);
+    opacity: 1;
+}
+#projectModal.hidden > div.transform.scale-95 {
+    transform: scale(0.95);
+    opacity: 0;
+}
